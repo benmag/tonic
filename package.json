@@ -1,0 +1,16 @@
+{
+  "name": "tonic",
+  "version": "1.0.0",
+  "description": "Tonic - A lightweight and refreshingly clean theme built on top of Bootstrap.",
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "@benmagg",
+  "license": "ISC",
+
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-sass": "^1.3.3"
+  }
+}

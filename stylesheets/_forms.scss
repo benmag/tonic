@@ -1,0 +1,36 @@
+/**
+ * Forms
+ */
+@mixin input-large($margin) {
+  background: #fff;
+  border: 2px solid #e7e7e7;
+  margin: $margin;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: opacity 0.4s;
+  text-align: left;
+  height: auto;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+.input-large {
+  @include input-large(20px auto)
+}
+
+.submit-large {
+  @include input-large(20px auto 0px auto);
+  color: white;
+  background: $primary-brand-color;
+  border: 0;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 0;
+  height: auto;
+  -webkit-appearance: none;
+}

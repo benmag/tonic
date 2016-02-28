@@ -1,0 +1,28 @@
+/**
+ * Masthead
+ */
+.masthead {
+  text-align:center;
+  padding-top: $masthead-padding-top;
+  padding-bottom: $masthead-padding-bottom;
+  overflow: hidden;
+  border-bottom: 0;
+
+  .btn {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 24px;
+    border-radius: 4px;
+    font-weight: 400;
+  }
+
+}
+
+
+.darker-section {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #f9f9f9;
+  padding: 30px;
+}

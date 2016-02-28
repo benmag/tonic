@@ -1,0 +1,14 @@
+/**
+ * Buttons
+ */
+.btn-primary-brand-color {
+  color: #fff;
+  border: 1px solid $primary-brand-color;
+  background: $primary-brand-color;
+
+  &:hover {
+    color: #fff;
+    background: lighten($primary-brand-color, 10%);
+    border-color: lighten($primary-brand-color, 10%);
+  }
+}

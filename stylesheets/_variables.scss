@@ -1,0 +1,33 @@
+/**
+ * Variable Defaults
+ */
+
+// Branding
+$primary-brand-color: #4286F5 !default;
+
+// Typography
+$font-family-sans-serif: Roboto,sans-serif;
+$font-size-h1: 38px;
+$headings-font-weight: 300;
+$headings-line-height: 1.4;
+
+// Navbar
+$navbar-height: 85px !default;
+$navbar-default-bg: #fff !default;
+$navbar-default-border: #fff !default;
+$navbar-default-color: #293a46 !default;
+$navbar-default-link-color: #293a46 !default;
+$navbar-padding-horizontal: 15px 0 0 !default;
+$navbar-margin-bottom: 0px !default;
+$navbar-btn-margin-top: 25px !default;
+
+// Masthead
+$masthead-padding-top: 30px !default;
+$masthead-padding-bottom: 70px !default;
+
+// Modal
+$modal-lg: 450px;
+$modal-md: 450px;
+$modal-content-border-color: transparent;
+$modal-header-border-color: transparent;
+

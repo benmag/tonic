@@ -1,0 +1,81 @@
+/**
+ * Navbar
+ */
+.navbar-default {
+
+  .btn {
+    padding: 7px 19px;
+    margin-top: $navbar-btn-margin-top;
+  }
+
+  .navbar-nav > li > a {
+    font-weight: 300;
+
+    &.log-in-btn, &.sign-up-btn {
+      color: $primary-brand-color;
+      font-weight: 400;
+    }
+
+    &.sign-up-btn {
+      @extend .btn-default;
+      border-color: $primary-brand-color;
+
+      &:hover {
+        background: $primary-brand-color;
+        border-color: $primary-brand-color;
+        color:#fff;
+      }
+    }
+  }
+
+  .settings-dropdown {
+    padding-left: 10px;
+
+    .dropdown-toggle {
+      padding: 7px 12px;
+      border-color: #e4e4e4;
+    }
+  }
+}
+
+.navbar-authed {
+  @extend .navbar-default;
+  min-height:50px;
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .navbar-nav > li > a {
+    &:not(.btn) {
+      padding-bottom:15px;
+    }
+  }
+}
+
+@media (max-width: $grid-float-breakpoint) {
+  .navbar-default {
+    .navbar-nav {
+      margin: 0;
+
+      .btn {
+        margin-top:10px;
+        margin-bottom:20px;
+      }
+
+      .sign-up-btn {
+        float:left;
+        width:88%;
+      }
+
+      .settings-dropdown {
+        padding-left:0;
+
+        .dropdown-toggle {
+          float:right;
+          width:10%;
+        }
+      }
+    }
+  }
+}

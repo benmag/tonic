@@ -1,0 +1,33 @@
+/**
+ * Footer
+ */
+.footer {
+  position: relative;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #dcdfe4;
+
+  a {
+    color: $primary-brand-color;
+    text-decoration: none;
+  }
+
+  p:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+
+    .footer-list-item {
+      display: inline-block;
+
+      &:not(:last-child):after {
+        content: "\b7";
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "name": "tonic",
+  "name": "tonic-bootstrap",
   "version": "1.0.0",
   "description": "Tonic - A lightweight and refreshingly clean theme built on top of Bootstrap.",
   "keywords": [
     "bootstrap"
   ],
-  "author": "@benmagg",
-  "license": "ISC",
+  "author": "twitter.com/@benmagg",
+  "license": "MIT",
 
   "devDependencies": {
     "gulp": "^3.8.11",

@@ -34,3 +34,23 @@
   height: auto;
   -webkit-appearance: none;
 }
+
+.select-field {
+  position: relative;
+}
+
+.select-field:after {
+  position: absolute;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f078";
+  text-align: center;
+  font-size: 1.5rem;
+  color: #CBCBCB;
+  line-height: 2rem;
+  right: 19px;
+  top: 22px;
+}
+
+.select-field select {
+  cursor: pointer;
+}

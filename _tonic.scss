@@ -14,7 +14,6 @@
  |  @benmagg
  */
 
-
 // Variables
 @import "stylesheets/variables";
 
@@ -33,6 +32,12 @@
 @import "stylesheets/masthead";
 @import "stylesheets/login";
 @import "stylesheets/footer";
+
+// Docs
+@import "stylesheets/sidebar";
+@import "stylesheets/docs";
+//@import "stylesheets/prism";
+
 
 
 body {

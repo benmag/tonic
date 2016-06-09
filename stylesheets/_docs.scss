@@ -1,0 +1,268 @@
+/**
+ * Docs
+ *
+ * Inspired by the Laravel Docs
+ * https://github.com/laravel/laravel
+ */
+.documentation {
+
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+
+  h1, h2, h3, h4, h5 {
+    color: #333;
+  }
+
+  .navbar {
+    padding-top: 2px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .page-header {
+    background-color: #fdfdfd;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 40px 0;
+    margin:0;
+
+    .container {
+      position: relative;
+    }
+
+    .page-header-icon {
+      width: 64px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 15px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+    }
+
+    .page-header-title {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+      h1 {
+        margin-bottom: 0;
+        margin-left:-1px;
+      }
+
+      p {
+        margin-top: -4px;
+      }
+
+    }
+
+    .page-header-right {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -20px;
+
+      .page-header-btn {
+        border-color: #d4d7d9;
+        background-image: -webkit-linear-gradient(bottom,#F3F3F3,#FDFDFD);
+        background-image: linear-gradient(to top,#F3F3F3,#FDFDFD);
+        color: #505659;
+        font-size: 14px;
+        height: 40px;
+        padding: 6px 14px;
+
+        .caret {
+          margin-left: 5px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .docs {
+
+    color: #546c82;
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
+
+
+    .sidebar {
+      padding: 30px 0 0 15px;
+
+      h5 {
+        font-size: 13px;
+        color: #262e33;
+        font-weight: 600;
+        margin-bottom: 8px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+
+      ul > li > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul > li > ul > li {
+        line-height: 24px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+      }
+
+    }
+
+  }
+
+}
+
+.docs article {
+  padding: 25px 125px 50px 50px;
+
+  .content-list ul li {
+    margin: 8px;
+    line-height: 1.65;
+  }
+
+  p {
+    line-height: 1.70;
+  }
+
+  h1 + ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $color__faint;
+    -webkit-font-smoothing: antialiased;
+    li {
+      &:before {
+        content: "# ";
+        margin-right: .25em;
+        color: $color__salmon;
+        opacity: .3;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  h2:first-of-type {
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 55px;
+    position: relative;
+
+    a,
+    a:hover {
+      color: $color__gray;
+      text-decoration: none;
+    }
+    a:before {
+      content: "#";
+      margin-left: -25px;
+      position: absolute;
+      font-size: 28px;
+      top: 5px;
+      color: $color__salmon;
+      opacity: .6;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 45px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 35px;
+  }
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: darken($color__salmon, 10%);
+    }
+  }
+
+  blockquote a:hover {
+    color: lighten($color__salmon, 25%);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    th,
+    td {
+      border: 1px solid $color__lighter_gray;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      font-size: 16px;
+    }
+  }
+}
+
+
+// Sizing specific styling
+@media (max-width: $screen-sm-max) {
+
+  .docs .sidebar {
+    padding-left: 50px !important;
+    border-right: 0 !important;
+  }
+
+  .docs article {
+    margin-left: 0px;
+    padding:50px;
+  }
+
+  .page-header {
+    text-align: center;
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+
+    .page-header-icon {
+      display: block !important;
+      margin: 0 auto !important;
+    }
+
+    .page-header-title {
+      display: block !important;
+    }
+
+    .page-header-right {
+      position: static !important;
+      margin-top: 10px !important;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+  }
+
+}

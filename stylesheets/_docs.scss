@@ -163,7 +163,7 @@
       &:before {
         content: "# ";
         margin-right: .25em;
-        color: $color__salmon;
+        color: $primary-brand-color;
         opacity: .3;
       }
       a {
@@ -192,7 +192,7 @@
       position: absolute;
       font-size: 28px;
       top: 5px;
-      color: $color__salmon;
+      color: $primary-brand-color;
       opacity: .6;
     }
   }
@@ -212,12 +212,12 @@
   a {
     text-decoration: underline;
     &:hover {
-      color: darken($color__salmon, 10%);
+      color: darken($primary-brand-color, 10%);
     }
   }
 
   blockquote a:hover {
-    color: lighten($color__salmon, 25%);
+    color: lighten($primary-brand-color, 25%);
   }
 
   table {
